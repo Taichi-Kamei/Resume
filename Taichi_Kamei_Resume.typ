@@ -32,15 +32,15 @@
     text(weight: "bold")[#role],
     align(right, text(style: "italic")[#dates]),
   )
-  if university != "" or subtitle != ""{{text(size: 9pt)[#university]}
-    { text(style: "italic", size: 9pt)[#subtitle] }}
+  if university != "" or subtitle != ""{{text(size: 10.5pt)[#university]}
+    { text(style: "italic", size: 10.5pt)[#subtitle] }}
   v(2pt)
   for b in bullets.pos() {
     grid(
-      columns: (10pt, 1fr),
+      columns: (10.5pt, 1fr),
       gutter: 0pt,
       align(top)[·],
-      align(top, text(size: 9.5pt, b.trim())),
+      align(top, text(size: 10.5pt, b.trim())),
     )
     v(1pt)
   }
