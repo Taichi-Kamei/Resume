@@ -80,8 +80,9 @@ Dean's Honor List 2025
   "Designed a power board for 4S LiPo, integrating BMS IC and 5V/5A buck converter",
   "Sized charge and discharge FETs for the BMS IC based on anticipated continuous/pulse drain current, DS voltage, and on-resistance to achieve safe handling and minimize heat dissipation",
   "Designed a Sallen-Key low-pass filter with non-inverting amplifier for amplifying 5kHz signal while attenuating 25kHz PWM noise, simulated its functionality on NgSpice",
+  "Designed a custom 4-layer GPS & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
   "Prototyping a flight controller PCB, integrating ESP32-S3-Mini-1, BMS, IMU, and a barometer",
-  "Designing and fabricating a drone frame and a test rig for motor PID tuning",
+  
 )
 
 #cventry(
@@ -109,9 +110,9 @@ Dean's Honor List 2025
   columns: (80pt, 1fr),
   row-gutter: 6pt,
   text(weight: "bold")[Software], [Python, Java, C/C++, Assembly, VHDL, Linux, Git],
-  text(weight: "bold")[Electrical], [KiCAD, LTSpice, Soldering, Oscilloscope, DMM, Logic Analyzer],
+  text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Logic Analyzer],
   text(weight: "bold")[Mechanical],
   [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 
-  text(weight: "bold")[Embedded], [ESP-IDF, Arduino, Raspberry Pi, FPGA, ROS, I2C, SPI],
+  text(weight: "bold")[Embedded], [ESP-IDF, Arduino, Raspberry Pi, FPGA, ROS, I2C, SPI, UART],
 )
