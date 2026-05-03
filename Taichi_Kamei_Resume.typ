@@ -11,9 +11,11 @@
     #h(8pt) | #h(8pt)
     #link("mailto:t.kamei0716@gmail.com")[t.kamei0716\@gmail.com]
     #h(8pt) | #h(8pt)
-    #link("https://linkedin.com/in/taichikamei")[linkedin.com/in/taichikamei]
+    #link("https://taichi-kamei.github.io")[Portfolio]
     #h(8pt) | #h(8pt)
     #link("https://github.com/Taichi-Kamei")[github.com/Taichi-Kamei]
+    #h(8pt) | #h(8pt)
+    #link("https://linkedin.com/in/taichikamei")[linkedin.com/in/taichikamei]
   ])
 ]
 
