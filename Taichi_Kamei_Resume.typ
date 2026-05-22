@@ -1,4 +1,4 @@
-#set page(paper: "us-letter", margin: (x: 0.75in, y: 0.6in))
+#set page(paper: "us-letter", margin: (x: 0.7in, y: 0.45in))
 #set text(font: "Libertinus Serif", size: 10pt)
 #set par(leading: 7pt, spacing: 6pt)
 
@@ -7,8 +7,6 @@
   #text(font: "Libertinus Serif", size: 25pt, weight: "bold")[Taichi Kamei]
   #v(8pt)
   #align(center, text(size: 9pt)[
-    +1 (236) 868-0229
-    #h(8pt) | #h(8pt)
     #link("mailto:t.kamei0716@gmail.com")[t.kamei0716\@gmail.com]
     #h(8pt) | #h(8pt)
     #link("https://taichi-kamei.github.io")[Portfolio]
@@ -69,9 +67,12 @@ Dean's Honor List 2025
 // ── EXPERIENCE ────────────────────────────────────────────────────────────────
 #section("Experience")
 #cventry(
-  "Quantum Photonic Researcher",
+  "Quantum Photonics PCB Design & Test Engineer Co-op",
   "May 2026 - Present",
   subtitle: "UBC Blusson Quantum Matter Institute",
+  "Testing and verifying the low-noise quasi-current source PCB for the SNSPD biasing current, which can I-V sweep to detect the switching current for each wireguided photonics chip",
+  "Working on the quasi-current source PCB firmware in C++",
+  "Desiging a current source PCB casing on SolidWorks, reducing vibrational noise coupling into the PCB",
 )
 
 // ── PROJECTS ──────────────────────────────────────────────────────────────────
@@ -80,10 +81,9 @@ Dean's Honor List 2025
   "Drone Flight Controller",
   "Feb 2026 - Present",
   "Designed a power board for 4S LiPo, integrating BMS IC and 5V/5A buck converter",
-  "Sized charge and discharge FETs for the BMS IC based on anticipated continuous/pulse drain current, DS voltage, and on-resistance to achieve safe handling and minimize heat dissipation",
   "Designed a Sallen-Key low-pass filter with non-inverting amplifier for amplifying 5kHz signal while attenuating 25kHz PWM noise, simulated its functionality on NgSpice",
   "Designed a custom 4-layer GPS & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
-  "Prototyping a flight controller PCB, integrating ESP32-S3-Mini-1, BMS, IMU, and a barometer",
+  "Prototyping a flight controller PCB, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261",
   
 )
 
@@ -112,7 +112,7 @@ Dean's Honor List 2025
   columns: (80pt, 1fr),
   row-gutter: 6pt,
   text(weight: "bold")[Software], [Python, Java, C/C++, Assembly, VHDL, Linux, Git],
-  text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Logic Analyzer],
+  text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Spectrum Analyzer, Logic Analyzer],
   text(weight: "bold")[Mechanical],
   [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 
