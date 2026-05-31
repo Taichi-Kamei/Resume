@@ -62,17 +62,21 @@
   [Solid and Fluid Mechanics, Mechanical Designs, Electric Circuit Analysis, Signals and Systems, Thermodynamics, Statistical Mechanics, Quantum Mechanics],
 )
 #v(4pt)
-Dean's Honor List 2025
+// Dean's Honor List 2025
 
 // ── EXPERIENCE ────────────────────────────────────────────────────────────────
 #section("Experience")
 #cventry(
-  "Quantum Photonics PCB Design & Test Engineer Co-op",
+  "Firmware & Validation Engineer Co-op",
   "May 2026 - Present",
   subtitle: "UBC Blusson Quantum Matter Institute",
-  "Testing and verifying the low-noise quasi-current source PCB for the SNSPD biasing current, which can I-V sweep to detect the switching current for each wireguided photonics chip",
-  "Working on the quasi-current source PCB firmware in C++",
-  "Desiging a current source PCB casing on SolidWorks, reducing vibrational noise coupling into the PCB",
+  "Developing full-stack C++ firmware for 4-channel low-noise SNSPD current source, achieving lower noise spectral density than commercial SMU",
+  "Implementing 24-bit ADC and 16-bit DAC SPI driver on ESP32 using ESP-IDF, enabling precision current measurement and control",
+  "Designing FSM with FreeRTOS dual-core task architecture and ISR-driven sampling",
+  "Developing automated V-I sweep to characterize SNSPD switching current and determine optimal bias point",
+  "Building Python Qt6 GUI and CSV data logging for instrument and data acquisition",
+  "Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC&ADC accuracy of the instrument using oscilloscope and pico-ammeter",
+  "Designing a current source PCB casing on SolidWorks, reducing vibrational noise coupling into the PCB",
 )
 
 // ── PROJECTS ──────────────────────────────────────────────────────────────────
@@ -81,7 +85,6 @@ Dean's Honor List 2025
   "Drone Flight Controller",
   "Feb 2026 - Present",
   "Designed a power board for 4S LiPo, integrating BMS IC and 5V/5A buck converter",
-  "Designed a Sallen-Key low-pass filter with non-inverting amplifier for amplifying 5kHz signal while attenuating 25kHz PWM noise, simulated its functionality on NgSpice",
   "Designed a custom 4-layer GPS & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
   "Prototyping a flight controller PCB, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261",
   
@@ -93,6 +96,7 @@ Dean's Honor List 2025
   "Developed an autonomous vehicle in Gazebo and ROS 1 using OpenCV for PID control driving, obstruction avoidance, and CNN clue detection",
   "Designed and implemented a finite state machine (FSM) capable of transitioning its states for moving obstruction detection, clue board detection, and drive under various track surface conditions",
   "Optimized a PID algorithm for precise center-lane driving using dual side lines instead of a typical single line-following, overcoming camera center offset from the geometric center of the lane",
+  "Created a Qt5 controller GUI which integrates simulation controls and launch of two ROS node scripts, boosting team productivity by centralizing all controls into a single window which normally takes 4+ separate terminals",
 )
 
 #cventry(
@@ -112,9 +116,8 @@ Dean's Honor List 2025
   columns: (80pt, 1fr),
   row-gutter: 6pt,
   text(weight: "bold")[Software], [Python, Java, C/C++, Assembly, VHDL, Linux, Git],
+  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, FPGA, ROS, I2C, SPI, UART],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Spectrum Analyzer, Logic Analyzer],
-  text(weight: "bold")[Mechanical],
-  [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
+  text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 
-  text(weight: "bold")[Embedded], [ESP-IDF, Arduino, Raspberry Pi, FPGA, ROS, I2C, SPI, UART],
 )
