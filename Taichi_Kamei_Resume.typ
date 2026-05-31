@@ -62,7 +62,7 @@
   [Solid and Fluid Mechanics, Mechanical Designs, Electric Circuit Analysis, Signals and Systems, Thermodynamics, Statistical Mechanics, Quantum Mechanics],
 )
 #v(4pt)
-// Dean's Honor List 2025
+Dean's Honor List 2025
 
 // ── EXPERIENCE ────────────────────────────────────────────────────────────────
 #section("Experience")
