@@ -70,13 +70,15 @@ Dean's Honor List 2025
   "Firmware & Validation Engineer Co-op",
   "May 2026 - Present",
   subtitle: "UBC Blusson Quantum Matter Institute",
-  "Developing full-stack C++ firmware for 4-channel low-noise SNSPD current source, achieving lower noise spectral density than commercial SMU",
-  "Implementing 24-bit ADC and 16-bit DAC SPI driver on ESP32 using ESP-IDF, enabling precision current measurement and control",
-  "Designing FSM with FreeRTOS dual-core task architecture and ISR-driven sampling",
-  "Developing automated V-I sweep to characterize SNSPD switching current and determine optimal bias point",
-  "Building Python Qt6 GUI and CSV data logging for instrument and data acquisition",
-  "Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC&ADC accuracy of the instrument using oscilloscope and pico-ammeter",
-  "Designing a current source PCB casing on SolidWorks, reducing vibrational noise coupling into the PCB",
+  
+"Developing full-stack embedded firmware for the multi-channel low-noise SNSPD biasing quasi-current source in C++, achieving lower noise spectral density than commercial SMU",
+"Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination for deterministic concurrent per-channel control",
+"Developed bidirectional V-I sweep measurement mode with hysteresis to characterize the switching current of the superconducting nanowire used for identifying a SNSPD steady biasing current",
+"Designed steady-state biasing mode with configurable voltage and duration for SNSPD operating point control",
+"Implementing 24-bit sigma-delta ADC and 16-bit DAC SPI driver from datasheet register maps",
+"Building PySide6 GUI and CSV data logger for user interface and data analysis",
+"Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC & ADC accuracy of the instrument using oscilloscope and pico-ammeter",
+"Designing a PCB casing on SolidWorks, reducing vibrational noise coupling into the PCB"
 )
 
 // ── PROJECTS ──────────────────────────────────────────────────────────────────
@@ -85,19 +87,20 @@ Dean's Honor List 2025
   "Drone Flight Controller",
   "Feb 2026 - Present",
   "Designed a power board for 4S LiPo, integrating BMS IC and 5V/5A buck converter",
-  "Designed a custom 4-layer GPS & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
+  "Designed a custom 4-layer GPS-module & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
   "Prototyping a flight controller PCB, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261",
+  "Planned to develop BMS I2C driver, GPS-module UART driver, and RF SPI firmware in Rust"
   
 )
 
-#cventry(
-  "Autonomous Clue Detecting Robot",
-  "November 2025",
-  "Developed an autonomous vehicle in Gazebo and ROS 1 using OpenCV for PID control driving, obstruction avoidance, and CNN clue detection",
-  "Designed and implemented a finite state machine (FSM) capable of transitioning its states for moving obstruction detection, clue board detection, and drive under various track surface conditions",
-  "Optimized a PID algorithm for precise center-lane driving using dual side lines instead of a typical single line-following, overcoming camera center offset from the geometric center of the lane",
-  "Created a Qt5 controller GUI which integrates simulation controls and launch of two ROS node scripts, boosting team productivity by centralizing all controls into a single window which normally takes 4+ separate terminals",
-)
+// #cventry(
+//   "Autonomous Clue Detecting Robot",
+//   "November 2025",
+//   "Developed an autonomous vehicle in Gazebo and ROS 1 using OpenCV for PID control driving, obstruction avoidance, and CNN clue detection",
+//   "Designed and implemented a finite state machine (FSM) capable of transitioning its states for moving obstruction detection, clue board detection, and drive under various track surface conditions",
+//   "Optimized a PID algorithm for precise center-lane driving using dual side lines instead of a typical single line-following, overcoming camera center offset from the geometric center of the lane",
+//   "Created a Qt5 controller GUI which integrates simulation controls and launch of two ROS node scripts, boosting team productivity by centralizing all controls into a single window which normally takes 4+ separate terminals",
+// )
 
 #cventry(
   "Autonomous Payload Retrieving Robot",
@@ -115,7 +118,7 @@ Dean's Honor List 2025
 #grid(
   columns: (80pt, 1fr),
   row-gutter: 6pt,
-  text(weight: "bold")[Software], [Python, Java, C/C++, Assembly, VHDL, Linux, Git],
+  text(weight: "bold")[Software], [C/C++, Python, Java, Assembly, VHDL, Linux, Git],
   text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, FPGA, ROS, I2C, SPI, UART],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Spectrum Analyzer, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
