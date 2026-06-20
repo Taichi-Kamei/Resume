@@ -16,6 +16,7 @@
     #link("https://linkedin.com/in/taichikamei")[linkedin.com/in/taichikamei]
   ])
 ]
+#h(12pt)
 
 // ── Section ───────────────────────────────────────────────────────────────────
 #let section(title) = {
@@ -49,6 +50,7 @@
 
 // ── EDUCATION ─────────────────────────────────────────────────────────────────
 #section("Education")
+#h(12pt)
 #cventry(
   "3rd Year Engineering Physics",
   "Expected Graduation - May 2028",
@@ -63,9 +65,11 @@
 )
 #v(4pt)
 Dean's Honor List 2025
+#h(12pt)
 
 // ── EXPERIENCE ────────────────────────────────────────────────────────────────
 #section("Experience")
+#h(12pt)
 #cventry(
   "Firmware & Validation Engineer Co-op",
   "May 2026 - Present",
@@ -75,14 +79,16 @@ Dean's Honor List 2025
 "Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination for deterministic concurrent per-channel control",
 "Developed bidirectional V-I sweep measurement mode with hysteresis to characterize the switching current of the superconducting nanowire used for identifying a SNSPD steady biasing current",
 "Designed steady-state biasing mode with configurable voltage and duration for SNSPD operating point control",
-"Developing C++ object-oriented wrapper for SPI-based 24-bit sigma-delta ADC and 16-bit DAC manufacturer drivers, enabling type-safe hardware abstraction",
+"Porting Analog Devices no-OS ADC/DAC drivers to ESP-IDF, implementing SPI/GPIO platform abstraction layer",
 "Building Python Remi GUI and CSV data logger for per-channel user control and data analysis",
 "Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC & ADC accuracy of the instrument using oscilloscope and pico-ammeter",
 "Designing a PCB casing on SolidWorks, reducing vibrational noise coupling into the PCB"
 )
+#h(12pt)
 
 // ── PROJECTS ──────────────────────────────────────────────────────────────────
 #section("Projects")
+#h(12pt)
 #cventry(
   "Drone Flight Controller",
   "Feb 2026 - Present",
@@ -93,14 +99,18 @@ Dean's Honor List 2025
   
 )
 
-// #cventry(
-//   "Autonomous Clue Detecting Robot",
-//   "November 2025",
-//   "Developed an autonomous vehicle in Gazebo and ROS 1 using OpenCV for PID control driving, obstruction avoidance, and CNN clue detection",
-//   "Designed and implemented a finite state machine (FSM) capable of transitioning its states for moving obstruction detection, clue board detection, and drive under various track surface conditions",
-//   "Optimized a PID algorithm for precise center-lane driving using dual side lines instead of a typical single line-following, overcoming camera center offset from the geometric center of the lane",
-//   "Created a Qt5 controller GUI which integrates simulation controls and launch of two ROS node scripts, boosting team productivity by centralizing all controls into a single window which normally takes 4+ separate terminals",
-// )
+#h(12pt)
+#cventry(
+  "Autonomous Clue Detecting Robot",
+  "November 2025",
+  "Developed an autonomous vehicle in Gazebo and ROS 1 using OpenCV for PID control driving, obstruction avoidance, and CNN clue detection",
+  "Designed and implemented a finite state machine (FSM) capable of transitioning its states for moving obstruction detection, clue board detection, and drive under various track surface conditions",
+  "Optimized a PID algorithm for precise center-lane driving using dual side lines instead of a typical single line-following, overcoming camera center offset from the geometric center of the lane",
+  "Created a Qt5 controller GUI which integrates simulation controls and launch of two ROS node scripts, boosting team productivity by centralizing all controls into a single window which normally takes 4+ separate terminals",
+)
+
+#pagebreak()
+#h(20pt)
 
 #cventry(
   "Autonomous Payload Retrieving Robot",
@@ -115,11 +125,12 @@ Dean's Honor List 2025
 // ── SKILLS ────────────────────────────────────────────────────────────────────
 #section("Skills")
 
+#h(12pt)
 #grid(
   columns: (80pt, 1fr),
   row-gutter: 6pt,
   text(weight: "bold")[Software], [C/C++, Python, Java, Assembly, VHDL, Linux, Git, CMake],
-  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, FPGA, ROS, I2C, SPI, UART],
+  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Spectrum Analyzer, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 
