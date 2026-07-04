@@ -78,7 +78,7 @@ Dean's Honor List 2025
 "Developing full-stack embedded firmware for the multi-channel low-noise SNSPD biasing voltage controlled current source in C++, aiming to achieve lower noise spectral density than commercial SMU",
 "Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination for deterministic concurrent per-channel control",
 "Developed V-I sweep mode with hysteresis for determining switching current threshold and steady-state biasing mode for SNSPD operating point control",
-"Ported Analog Devices no-OS ADC/DAC drivers to ESP-IDF, implementing SPI platform abstraction layer and manual CS toggle for 5 SPI slaves on a single shared bus",
+"Ported Analog Devices no-OS 24-bit ADC/16-bit DAC drivers to ESP-IDF, implementing SPI platform abstraction layer and manual CS toggle for 5 SPI slaves on a single shared bus",
 "Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision",
 "Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC & ADC accuracy of the instrument using oscilloscope and pico-ammeter",
