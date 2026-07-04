@@ -74,15 +74,14 @@ Dean's Honor List 2025
   "Firmware & Validation Engineer Co-op",
   "May 2026 - Present",
   subtitle: "UBC Blusson Quantum Matter Institute",
-  
-"Developing full-stack embedded firmware for the multi-channel low-noise SNSPD biasing quasi-current source in C++, achieving lower noise spectral density than commercial SMU",
+ 
+"Developing full-stack embedded firmware for the multi-channel low-noise SNSPD biasing voltage controlled current source in C++, aiming to achieve lower noise spectral density than commercial SMU",
 "Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination for deterministic concurrent per-channel control",
-"Developed bidirectional V-I sweep measurement mode with hysteresis to characterize the switching current of the superconducting nanowire used for identifying a SNSPD steady biasing current",
-"Designed steady-state biasing mode with configurable voltage and duration for SNSPD operating point control",
-"Porting Analog Devices no-OS ADC/DAC drivers to ESP-IDF, implementing SPI/GPIO platform abstraction layer",
-"Building Python Remi GUI and CSV data logger for per-channel user control and data analysis",
+"Developed V-I sweep mode with hysteresis for determining switching current threshold and steady-state biasing mode for SNSPD operating point control",
+"Ported Analog Devices no-OS ADC/DAC drivers to ESP-IDF, implementing SPI platform abstraction layer and manual CS toggle for 5 SPI slaves on a single shared bus",
+"Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
+"Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision",
 "Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC & ADC accuracy of the instrument using oscilloscope and pico-ammeter",
-"Designing a PCB casing on SolidWorks, reducing vibrational noise coupling into the PCB"
 )
 #h(12pt)
 
@@ -94,7 +93,7 @@ Dean's Honor List 2025
   "Feb 2026 - Present",
   "Designed a power board for 4S LiPo, integrating BMS IC and 5V/5A buck converter",
   "Designed a custom 4-layer GPS-module & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
-  "Prototyping a flight controller PCB, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261",
+  "Prototyping a 4-layer flight controller PCB, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261",
   "Planned to develop BMS I2C driver, GPS-module UART driver, and RF SPI firmware in Rust"
   
 )
