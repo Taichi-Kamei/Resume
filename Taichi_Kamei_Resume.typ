@@ -75,10 +75,10 @@ Dean's Honor List 2025
   "May 2026 - Present",
   subtitle: "UBC Blusson Quantum Matter Institute",
  
-"Developing full-stack embedded firmware for the multi-channel low-noise SNSPD biasing voltage controlled current source in C++, aiming to achieve lower noise spectral density than commercial SMU",
+"Developing an embedded firmware in C/C++ for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD), aiming to achieve lower noise spectral density than the commercial SMU",
 "Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination for deterministic concurrent per-channel control",
+"Ported Analog Devices no-OS 24-bit ADC/16-bit DAC drivers to ESP-IDF, implemented SPI platform abstraction layer with manual CS toggle for 5 SPI slaves on a single shared bus",
 "Developed V-I sweep mode with hysteresis for determining switching current threshold and steady-state biasing mode for SNSPD operating point control",
-"Ported Analog Devices no-OS 24-bit ADC/16-bit DAC drivers to ESP-IDF, implementing SPI platform abstraction layer and manual CS toggle for 5 SPI slaves on a single shared bus",
 "Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision",
 "Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC & ADC accuracy of the instrument using oscilloscope and pico-ammeter",
@@ -132,5 +132,4 @@ Dean's Honor List 2025
   text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Spectrum Analyzer, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
-
 )
