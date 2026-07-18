@@ -75,13 +75,15 @@ Dean's Honor List 2025
   "May 2026 - Present",
   subtitle: "UBC Blusson Quantum Matter Institute",
  
-"Developing an embedded firmware in C/C++ for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD), aiming to achieve lower noise spectral density than the commercial SMU",
-"Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination for deterministic concurrent per-channel control",
+"Developing an embedded firmware in C/C++ for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD)",
+"Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination, achieving deterministic concurrent per-channel control",
 "Ported Analog Devices no-OS 24-bit ADC/16-bit DAC drivers to ESP-IDF, implemented SPI platform abstraction layer with manual CS toggle for 5 SPI slaves on a single shared bus",
 "Developed V-I sweep mode with hysteresis for determining switching current threshold and steady-state biasing mode for SNSPD operating point control",
 "Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision",
-"Testing and verifying the noise floor, negative rail voltage noise, time domain voltage drift characteristics, and DAC & ADC accuracy of the instrument using oscilloscope and pico-ammeter",
+"Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 2 days using Raspberry Pi",
+"Testing and verifying the noise floor using pico-ammeter",
+"Designing a RF coplanar waveguide PCB and a low-pass filter PCB for GHz signals inside 2 Kelvin crostats"
 )
 #h(12pt)
 
