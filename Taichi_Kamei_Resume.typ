@@ -9,14 +9,16 @@
   #align(center, text(size: 9pt)[
     #link("mailto:t.kamei0716@gmail.com")[t.kamei0716\@gmail.com]
     #h(8pt) | #h(8pt)
-    #link("https://taichi-kamei.github.io")[Portfolio]
+    #link("https://taichi-kamei.github.io")[https://taichi-kamei.github.io/]
     #h(8pt) | #h(8pt)
     #link("https://github.com/Taichi-Kamei")[github.com/Taichi-Kamei]
     #h(8pt) | #h(8pt)
     #link("https://linkedin.com/in/taichikamei")[linkedin.com/in/taichikamei]
   ])
+  #v(10pt)
+  #text(font: "Libertinus Serif", size: 10pt)[Embedded systems & Hardware engineer who takes projects from 0 to 1 under real physical constraints]
 ]
-#h(12pt)
+#h(10pt)
 
 // ── Section ───────────────────────────────────────────────────────────────────
 #let section(title) = {
@@ -52,37 +54,38 @@
 #section("Education")
 #h(12pt)
 #cventry(
-  "3rd Year Engineering Physics",
+  "4th Year Engineering Physics",
   "Expected Graduation - May 2028",
   university: "University of British Columbia | Vancouver",
 )
 #grid(
   columns: (auto, 1fr),
-  column-gutter: 6pt,
+  column-gutter: 4pt,
   align: top,
   [Relevant Courses:],
-  [Solid and Fluid Mechanics, Mechanical Designs, Electric Circuit Analysis, Signals and Systems, Thermodynamics, Statistical Mechanics, Quantum Mechanics],
+  [Solid and Fluid Mechanics, Mechanical Designs, Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Statistical Mechanics, Quantum Mechanics],
 )
-#v(4pt)
-Dean's Honor List 2025
-#h(12pt)
+// #v(4pt)
+// Dean's Honor List 2025
+#h(10pt)
 
 // ── EXPERIENCE ────────────────────────────────────────────────────────────────
 #section("Experience")
 #h(12pt)
 #cventry(
-  "Firmware & Validation Engineer Co-op",
+  "Firmware & Hardware Engineer Co-op",
   "May 2026 - Present",
   subtitle: "UBC Blusson Quantum Matter Institute",
- 
-"Developing an embedded firmware in C/C++ for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD)",
-"Designed an active object architecture on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination, achieving deterministic concurrent per-channel control",
-"Ported Analog Devices no-OS 24-bit ADC/16-bit DAC drivers to ESP-IDF, implemented SPI platform abstraction layer with manual CS toggle for 5 SPI slaves on a single shared bus",
-"Developed V-I sweep mode with hysteresis for determining switching current threshold and steady-state biasing mode for SNSPD operating point control",
-"Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
-"Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision",
+
+"Initially started as a PCB validation role for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD)", 
+"Recognized the need for firmware development, designed an active object architecture in C/C++ on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination, achieving deterministic concurrent per-channel control",
+"Ported Analog Devices no-OS 24-bit Sigma-Delta ADC and 16-bit DAC drivers to ESP-IDF, implemented SPI platform abstraction layer with manual CS toggle for 5 SPI slaves and mixed SPI modes on a 10MHz shared bus",
+"Diagnosed ADC garbage reading due to SPI CPOL mismatch on different SPI modes (DAC: Mode 1, ADC: Mode 3), resolved the issue by adding an NOP transaction before actual transaction",
+"Developed hysteresis V-I sweep mode with 10mV step size and steady-state biasing mode with 10nA precision",
+"Implemented calibration mode using Non-Volatile Storage, enabling runtime calibration lasting across power-cycle",
+// "Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
+"Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision on Altium",
 "Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 2 days using Raspberry Pi",
-"Testing and verifying the noise floor using pico-ammeter",
 "Designing a RF coplanar waveguide PCB and a low-pass filter PCB for GHz signals inside 2 Kelvin crostats"
 )
 #h(12pt)
@@ -96,7 +99,6 @@ Dean's Honor List 2025
   "Designed a power board for 4S LiPo, integrating BMS IC and 5V/5A buck converter",
   "Designed a custom 4-layer GPS-module & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
   "Prototyping a 4-layer flight controller PCB, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261",
-  "Planned to develop BMS I2C driver, GPS-module UART driver, and RF SPI firmware in Rust"
   
 )
 
@@ -132,6 +134,6 @@ Dean's Honor List 2025
   row-gutter: 6pt,
   text(weight: "bold")[Software], [C/C++, Python, Java, Assembly, VHDL, Linux, Git, CMake],
   text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART],
-  text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, DMM, Spectrum Analyzer, Logic Analyzer],
+  text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, Electrometer, DMM, SMU, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 )
