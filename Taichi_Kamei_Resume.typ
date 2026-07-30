@@ -63,7 +63,7 @@
   column-gutter: 4pt,
   align: top,
   [Relevant Courses:],
-  [Solid and Fluid Mechanics, Mechanical Designs, Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Statistical Mechanics, Quantum Mechanics],
+  [ Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Thermodynamics, Statistical Mechanics, Quantum Mechanics, Applied Linear Algebra],
 )
 // #v(4pt)
 // Dean's Honor List 2025
