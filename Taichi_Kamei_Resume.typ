@@ -87,7 +87,6 @@
 // "Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision on Altium",
 "Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 2 days using Raspberry Pi",
-"Designing a RF coplanar waveguide PCB and a low-pass filter PCB for GHz signals inside 2 Kelvin crostats"
 )
 #h(12pt)
 
@@ -97,9 +96,9 @@
 #cventry(
   "Drone Flight Controller",
   "Feb 2026 - Present",
-  "Designed a power board for 4S LiPo, integrating BMS IC and 5V/5A buck converter",
-  "Designed a custom 4-layer GPS-module & magnetometer PCB on KiCAD fitting within 260mm by 260mm",
-  "Prototyping a 4-layer flight controller PCB, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261",
+  "Designed a 4-layer flight controller PCB in KiCAD, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261 chip",
+  "Implemented power regulation stage for 4S LiPo input with 5V/5A buck converter, 3.3V LDO for sensors and MCU, and a split ground for minimizing noise from high current 15V ESC line",
+  "Designed a 4-layer GPS-module & magnetometer PCB fitting within 260mm by 260mm",
   
 )
 
