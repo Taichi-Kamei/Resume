@@ -65,28 +65,36 @@
   [Relevant Courses:],
   [ Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Thermodynamics, Statistical Mechanics, Quantum Mechanics, Applied Linear Algebra],
 )
-// #v(4pt)
-// Dean's Honor List 2025
+#v(4pt)
+Dean's Honor List 2026
 #h(10pt)
 
 // ── EXPERIENCE ────────────────────────────────────────────────────────────────
 #section("Experience")
 #h(12pt)
 #cventry(
+  "Electronics & Controls Co-op",
+  "Sept 2026 - Present",
+  subtitle: "LUNR Aerospace | Toronto",
+
+
+)
+#h(12pt)
+#cventry(
   "Firmware & Hardware Engineer Co-op",
-  "May 2026 - Present",
-  subtitle: "UBC Blusson Quantum Matter Institute",
+  "May 2026 - Aug 2026",
+  subtitle: "UBC Blusson Quantum Matter Institute | Vancouver",
 
 "Initially started as a PCB validation role for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD)", 
 "Recognized the need for firmware development, designed an active object architecture in C/C++ on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination, achieving deterministic concurrent per-channel control",
 "Ported Analog Devices no-OS 24-bit Sigma-Delta ADC and 16-bit DAC drivers to ESP-IDF, implemented SPI platform abstraction layer with manual CS toggle for 5 SPI slaves and mixed SPI modes on a 10MHz shared bus",
 "Diagnosed ADC garbage reading due to SPI CPOL mismatch on different SPI modes (DAC: Mode 1, ADC: Mode 3), resolved the issue by adding an NOP transaction before actual transaction",
 "Developed hysteresis V-I sweep mode with 10mV step size and steady-state biasing mode with 10nA precision",
-"Designed calibration mode using Non-Volatile Storage, enabling runtime calibration lasting across power-cycle",
-"Implemented UART connection watchdog, resetting all DAC to 0.0V when USB cable is unplugged for 2.5 seconds",
-// "Built Python Remi GUI and CSV data logger for per-channel user control and data analysis",
+"Designed calibration mode using Non-Volatile Memory, enabling runtime calibration lasting across power-cycle",
+"Implemented UART connection watchdog, resetting all DAC to 0.0V when USB cable is unplugged for 4 seconds",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision on Altium",
 "Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 2 days using Raspberry Pi",
+"Designed a co-planar waveguide PCB on Altium for 5GHz signals at 0.8 Kelvin cryogenic condition"
 )
 #h(12pt)
 
@@ -96,13 +104,15 @@
 #cventry(
   "Drone Flight Controller",
   "Feb 2026 - Present",
-  "Designed a 4-layer flight controller PCB in KiCAD, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261 chip",
+  "Designed a 4-layer flight controller PCB on KiCAD, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261 chip",
   "Implemented power regulation stage for 4S LiPo input with 5V/5A buck converter, 3.3V LDO for sensors and MCU, and a split ground for minimizing noise from high current 15V ESC line",
+  "Used Dshot one-wire communication protocol for signaling commands to 4 independent ESC",
   "Designed a 4-layer GPS-module & magnetometer PCB fitting within 260mm by 260mm",
-  
+  "Working on Kalman filter for sensor fusion in Rust"
 )
 
 #h(12pt)
+#pagebreak()
 #cventry(
   "Autonomous Clue Detecting Robot",
   "November 2025",
@@ -112,7 +122,6 @@
   "Created a Qt5 controller GUI which integrates simulation controls and launch of two ROS node scripts, boosting team productivity by centralizing all controls into a single window which normally takes 4+ separate terminals",
 )
 
-#pagebreak()
 #h(20pt)
 
 #cventry(
@@ -132,8 +141,8 @@
 #grid(
   columns: (80pt, 1fr),
   row-gutter: 6pt,
-  text(weight: "bold")[Software], [C/C++, Python, Java, Assembly, VHDL, Linux, Git, CMake],
-  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART],
+  text(weight: "bold")[Software], [C/C++, Python, Labview, Java, Assembly, VHDL, Linux, Git, CMake],
+  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART, Dshot],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, Electrometer, DMM, SMU, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 )
