@@ -82,7 +82,7 @@ Dean's Honor List 2026
 #h(12pt)
 #cventry(
   "Firmware & Hardware Engineer Co-op",
-  "May 2026 - Aug 2026",
+  "May - Aug 2026",
   subtitle: "UBC Blusson Quantum Matter Institute | Vancouver",
 
 "Initially started as a PCB validation role for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD)", 
@@ -115,7 +115,7 @@ Dean's Honor List 2026
 #pagebreak()
 #cventry(
   "Autonomous Clue Detecting Robot",
-  "November 2025",
+  "Nov 2025",
   "Developed an autonomous vehicle in Gazebo and ROS 1 using OpenCV for PID control driving, obstruction avoidance, and CNN clue detection",
   "Designed and implemented a finite state machine (FSM) capable of transitioning its states for moving obstruction detection, clue board detection, and drive under various track surface conditions",
   "Optimized a PID algorithm for precise center-lane driving using dual side lines instead of a typical single line-following, overcoming camera center offset from the geometric center of the lane",
@@ -126,7 +126,7 @@ Dean's Honor List 2026
 
 #cventry(
   "Autonomous Payload Retrieving Robot",
-  "June - August 2025",
+  "June - Aug 2025",
   "Designed a 3-DOF four-bar-linkage arm and arm base on Onshape and fabricated components using 3D printer, water jet cutter, and laser cutter",
   "Sized appropriate servo motors for the arm from maximum payload and bending moment calculations",
   "Implemented magnetic encoder-based rotational control for the arm base, achieving accuracy of less than 1° error",
