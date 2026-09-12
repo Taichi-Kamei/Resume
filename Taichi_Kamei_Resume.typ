@@ -77,6 +77,8 @@ Dean's Honor List 2026
   "Sept 2026 - Present",
   subtitle: "LUNR Aerospace | Toronto",
 
+  "Developing state machine in NI LabVIEW for 60kN rocket engine combustion control system, integrating multiple systems with temperature, pressure, load cell sensors and valves for different fluid mixtures",
+  // "Implementing Thrust Vector Control (TVC) firmware in C using ___",
 
 )
 #h(12pt)
@@ -91,7 +93,6 @@ Dean's Honor List 2026
 "Diagnosed ADC garbage reading due to SPI CPOL mismatch on different SPI modes (DAC: Mode 1, ADC: Mode 3), resolved the issue by adding an NOP transaction before actual transaction",
 "Developed hysteresis V-I sweep mode with 10mV step size and steady-state biasing mode with 10nA precision",
 "Designed calibration mode using Non-Volatile Memory, enabling runtime calibration lasting across power-cycle",
-"Implemented UART connection watchdog, resetting all DAC to 0.0V when USB cable is unplugged for 4 seconds",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision on Altium",
 "Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 2 days using Raspberry Pi",
 "Designed a co-planar waveguide PCB on Altium for 5GHz signals at 0.8 Kelvin cryogenic condition"
