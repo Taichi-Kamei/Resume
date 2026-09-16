@@ -63,7 +63,7 @@
   column-gutter: 4pt,
   align: top,
   [Relevant Courses:],
-  [ Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Thermodynamics, Statistical Mechanics, Quantum Mechanics, Applied Linear Algebra],
+  [Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Thermodynamics, Statistical Mechanics, Quantum Mechanics, Applied Linear Algebra],
 )
 #v(4pt)
 Dean's Honor List 2026
@@ -77,7 +77,7 @@ Dean's Honor List 2026
   "Sept 2026 - Present",
   subtitle: "LUNR Aerospace | Toronto",
 
-  "Developing state machine in NI LabVIEW for 60kN rocket engine combustion control system, integrating multiple systems with temperature, pressure, load cell sensors and valves for different fluid mixtures",
+  "Developing state machine in NI LabVIEW for 60kN rocket engine combustion control system, integrating multiple systems with temperature, pressure, load cell sensors and valves for different fluid",
   // "Implementing Thrust Vector Control (TVC) firmware in C using ___",
 
 )
@@ -152,7 +152,7 @@ Dean's Honor List 2026
   columns: (80pt, 1fr),
   row-gutter: 6pt,
   text(weight: "bold")[Software], [C/C++, Python, Labview, Java, Assembly, VHDL, Linux, Git, CMake, Rust],
-  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART],
+  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART, DAQ],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, Electrometer, DMM, SMU, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 )
