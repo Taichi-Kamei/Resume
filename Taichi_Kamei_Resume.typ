@@ -94,26 +94,35 @@ Dean's Honor List 2026
 "Developed hysteresis V-I sweep mode with 10mV step size and steady-state biasing mode with 10nA precision",
 "Designed calibration mode using Non-Volatile Memory, enabling runtime calibration lasting across power-cycle",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision on Altium",
-"Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 2 days using Raspberry Pi",
-"Designed a co-planar waveguide PCB on Altium for 5GHz signals at 0.8 Kelvin cryogenic condition"
+"Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 24 hours using Raspberry Pi",
+"Designed 8-channels co-planar waveguide PCB on Altium for 5GHz signals at 0.8 Kelvin cryogenic condition"
 )
 #h(12pt)
 
 // ── PROJECTS ──────────────────────────────────────────────────────────────────
 #section("Projects")
+
+// #h(12pt)
+// #cventry(
+//   "Capstone 1",
+//   "Sept 2026 - Present",
+//   "",
+// )
+
 #h(12pt)
 #cventry(
-  "Drone Flight Controller",
+  "Drone Flight Controller & Power Board",
   "Feb 2026 - Present",
   "Designed a 4-layer flight controller PCB on KiCAD, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261 chip",
   "Implemented power regulation stage for 4S LiPo input with 5V/5A buck converter, 3.3V LDO for sensors and MCU, and a split ground for minimizing noise from high current 15V ESC line",
   "Used Dshot one-wire communication protocol for signaling commands to 4 independent ESC",
   "Designed a 4-layer GPS-module & magnetometer PCB fitting within 260mm by 260mm",
-  "Working on Kalman filter for sensor fusion in Rust"
+  "Redesigning flight controller PCB and power board PCB as separate boards for space optimization",
+  // "Learning Rust for implementing Kalman filter"
 )
 
-#h(12pt)
 #pagebreak()
+#h(12pt)
 #cventry(
   "Autonomous Clue Detecting Robot",
   "Nov 2025",
@@ -142,8 +151,8 @@ Dean's Honor List 2026
 #grid(
   columns: (80pt, 1fr),
   row-gutter: 6pt,
-  text(weight: "bold")[Software], [C/C++, Python, Labview, Java, Assembly, VHDL, Linux, Git, CMake],
-  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART, Dshot],
+  text(weight: "bold")[Software], [C/C++, Python, Labview, Java, Assembly, VHDL, Linux, Git, CMake, Rust],
+  text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, Electrometer, DMM, SMU, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
 )
