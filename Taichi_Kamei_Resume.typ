@@ -35,9 +35,18 @@
     text(weight: "bold")[#role],
     align(right, text(style: "italic")[#dates]),
   )
-  if university != "" or subtitle != ""{{text(size: 10.5pt)[#university]}
-    { text(style: "italic", size: 10.5pt)[#subtitle] }}
-  v(2pt)
+  let orgline = if university != "" { university } else { subtitle }
+  if orgline != "" {
+    let parts = orgline.split("|")
+    if parts.len() == 2 {
+      text(size: 10.5pt, style: "italic")[#parts.at(0).trim()]
+      text(size: 10.5pt)[ | ]
+      text(size: 10.5pt, style: "italic")[#parts.at(1).trim()]
+    } else {
+      text(size: 10.5pt)[#orgline]
+    }
+  }
+  v(4pt)
   for b in bullets.pos() {
     grid(
       columns: (10.5pt, 1fr),
@@ -55,7 +64,7 @@
 #h(12pt)
 #cventry(
   "4th Year Engineering Physics",
-  "Expected Graduation - May 2028",
+  "Expected Graduation - Dec 2028",
   university: "University of British Columbia | Vancouver",
 )
 #grid(
@@ -78,8 +87,8 @@ Dean's Honor List 2026
   subtitle: "LUNR Aerospace | Toronto",
 
   "Developing state machine in NI LabVIEW for 60kN rocket engine combustion control system, integrating multiple systems with temperature, pressure, load cell sensors and valves for different fluid",
-  // "Implementing Thrust Vector Control (TVC) firmware in C using ___",
-
+  "Working on a modular Thurst Vector Control (TVC) firmware framework in C++, initially using for Simulink simulation and later ported on a flight controller hardware",
+  "Using Quaternion and Extended Kalman Filter on IMU data for the TVC PID control"
 )
 #h(12pt)
 #cventry(
@@ -102,13 +111,16 @@ Dean's Honor List 2026
 // ── PROJECTS ──────────────────────────────────────────────────────────────────
 #section("Projects")
 
-// #h(12pt)
-// #cventry(
-//   "Capstone 1",
-//   "Sept 2026 - Present",
-//   "",
-// )
+#h(12pt)
+#cventry(
+  "Continual Learning for Robotic Manipulation",
+  "Sept 2026 - Present",
+  "Capstone project. Investigating the existing Continual Learning method for robotic arms to learn tasks sequentially and retain previously learned skill",
+  "Will be replicating multiple representative SOTA robot-learning methods and evaluate on simulation platform",
+  "Hoping to deploy and evaluate of selected SOTA and CL methods on a real robot at the end of the Capstone project",
+)
 
+#pagebreak()
 #h(12pt)
 #cventry(
   "Drone Flight Controller & Power Board",
@@ -121,7 +133,6 @@ Dean's Honor List 2026
   // "Learning Rust for implementing Kalman filter"
 )
 
-#pagebreak()
 #h(12pt)
 #cventry(
   "Autonomous Clue Detecting Robot",
@@ -151,7 +162,7 @@ Dean's Honor List 2026
 #grid(
   columns: (80pt, 1fr),
   row-gutter: 6pt,
-  text(weight: "bold")[Software], [C/C++, Python, Labview, Java, Assembly, VHDL, Linux, Git, CMake, Rust],
+  text(weight: "bold")[Software], [C/C++, Python, LabVIEW, Rust, Java, Assembly, Simulink, VHDL, Linux, Git, CMake],
   text(weight: "bold")[Embedded], [ESP-IDF, FreeRTOS, Arduino, Raspberry Pi, ROS, Gazebo, FPGA, I2C, SPI, UART, DAQ],
   text(weight: "bold")[Electrical], [Kicad, Altium, LTSpice, Soldering, Oscilloscope, Electrometer, DMM, SMU, Logic Analyzer],
   text(weight: "bold")[Mechanical], [Onshape, Siemens NX, 3D printing, Laser Cutting, Water Jet Cutting, Drill Press, Caliper],
