@@ -72,7 +72,7 @@
   column-gutter: 4pt,
   align: top,
   [Relevant Courses:],
-  [Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Thermodynamics, Statistical Mechanics, Quantum Mechanics, Applied Linear Algebra],
+  [Electric Circuit Analysis, Signals and Systems, Software Construction, Digital Systems and Microcomputers, Thermodynamics, Statistical Mechanics, Analytical Mechanics, Applied Linear Algebra],
 )
 #v(4pt)
 Dean's Honor List 2026
@@ -86,9 +86,11 @@ Dean's Honor List 2026
   "Sept 2026 - Present",
   subtitle: "LUNR Aerospace | Toronto",
 
-  "Developing state machine in NI LabVIEW for 60kN rocket engine combustion control system, integrating multiple systems with temperature, pressure, load cell sensors and valves for different fluid",
-  "Working on a modular Thurst Vector Control (TVC) firmware framework in C++, initially using for Simulink simulation and later ported on a flight controller hardware",
-  "Using Quaternion and Extended Kalman Filter on IMU data for the TVC PID control"
+  "Developing state machine in NI LabVIEW for 60kN rocket engine combustion control system, integrating multiple systems with temperature, pressure, load cell sensors and valves",
+  "Working on a modular Thrust Vector Control (TVC) firmware framework in C++, initially using it for Simulink simulation and later ported on a flight controller hardware",
+  "Implemented Quaternion-based PID control in Python using GNC target vector and rocket body attitude",
+  "Modeled the transfer function from attitude PID output to TVC gimbal deflection and integrated it into the closed-loop pitch/yaw model to verify stability margins"
+
 )
 #h(12pt)
 #cventry(
@@ -99,11 +101,11 @@ Dean's Honor List 2026
 "Initially started as a PCB validation role for the 4-channel voltage controlled biasing current source PCB used for the superconducting nanowire single photon detector (SNSPD)", 
 "Recognized the need for firmware development, designed an active object architecture in C/C++ on ESP32 with ESP-IDF, FreeRTOS, dual-core task isolation, inter-core queue communication, and event coordination, achieving deterministic concurrent per-channel control",
 "Ported Analog Devices no-OS 24-bit Sigma-Delta ADC and 16-bit DAC drivers to ESP-IDF, implemented SPI platform abstraction layer with manual CS toggle for 5 SPI slaves and mixed SPI modes on a 10MHz shared bus",
-"Diagnosed ADC garbage reading due to SPI CPOL mismatch on different SPI modes (DAC: Mode 1, ADC: Mode 3), resolved the issue by adding an NOP transaction before actual transaction",
+// "Diagnosed ADC garbage reading due to SPI CPOL mismatch on different SPI modes (DAC: Mode 1, ADC: Mode 3), resolved the issue by adding an NOP transaction before actual transaction",
 "Developed hysteresis V-I sweep mode with 10mV step size and steady-state biasing mode with 10nA precision",
-"Designed calibration mode using Non-Volatile Memory, enabling runtime calibration lasting across power-cycle",
+// "Designed calibration mode using Non-Volatile Memory, enabling runtime calibration lasting across power-cycle",
 "Debugged 3.3V LDO undervoltage by oscilloscope scoping and datasheet comparison, applied hardware workaround and PCB layout revision on Altium",
-"Tested time domain DAC and ADC drift charateristics by logging both PCB and commercial SMU measurement for 24 hours using Raspberry Pi",
+"Tested time domain DAC and ADC drift characteristics by logging both PCB and commercial SMU measurement for 24 hours using Raspberry Pi",
 "Designed 8-channels co-planar waveguide PCB on Altium for 5GHz signals at 0.8 Kelvin cryogenic condition"
 )
 #h(12pt)
@@ -111,28 +113,27 @@ Dean's Honor List 2026
 // ── PROJECTS ──────────────────────────────────────────────────────────────────
 #section("Projects")
 
-#h(12pt)
-#cventry(
-  "Continual Learning for Robotic Manipulation",
-  "Sept 2026 - Present",
-  "Capstone project. Investigating the existing Continual Learning method for robotic arms to learn tasks sequentially and retain previously learned skill",
-  "Will be replicating multiple representative SOTA robot-learning methods and evaluate on simulation platform",
-  "Hoping to deploy and evaluate of selected SOTA and CL methods on a real robot at the end of the Capstone project",
-)
+// #h(12pt)
+// #cventry(
+//   "Continual Learning for Robotic Manipulation",
+//   "Sept 2026 - Present",
+//   "Investigating the existing Continual Learning method for bi-manipular robotic arms ML to learn tasks while avoiding catastrophic forgetting",
+//   "Will be replicating multiple representative SOTA robot-learning methods and evaluate on RoboTwin simulation",
+//   "Hoping to deploy and evaluate of selected SOTA and CL methods on a real robot at the end of the project",
+// )
 
-#pagebreak()
 #h(12pt)
 #cventry(
   "Drone Flight Controller & Power Board",
   "Feb 2026 - Present",
   "Designed a 4-layer flight controller PCB on KiCAD, integrating ESP32-S3-Mini-1U, BMS, IMU, barometer, and a RF transceiver using SX1261 chip",
   "Implemented power regulation stage for 4S LiPo input with 5V/5A buck converter, 3.3V LDO for sensors and MCU, and a split ground for minimizing noise from high current 15V ESC line",
-  "Used Dshot one-wire communication protocol for signaling commands to 4 independent ESC",
-  "Designed a 4-layer GPS-module & magnetometer PCB fitting within 260mm by 260mm",
+  "Designed a 4-layer GPS-module & magnetometer PCB fitting within 26mm by 26mm",
   "Redesigning flight controller PCB and power board PCB as separate boards for space optimization",
   // "Learning Rust for implementing Kalman filter"
 )
 
+#pagebreak()
 #h(12pt)
 #cventry(
   "Autonomous Clue Detecting Robot",
